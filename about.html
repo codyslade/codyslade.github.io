@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventures in HTML... or is it horror?</title>
+    <title>About - Slade</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
@@ -12,88 +12,109 @@
 <body>
     <a name="home"></a>
     <a name="top-of-page"></a>
-    <header id="body-header">
-        <h1 id="header-logo"><a href="https://codyslade.github.io" class="navbutton"><img id="header-logo" src="./assets/logo-icon.png">Slade</a></h1>
+    <header>
+        <h1 class="logo"><a href="https://codyslade.github.io" class="navbutton"><img src="./assets/logo-icon.png">Slade</a></h1>
         <nav>
             <ul id="nav-ul">
                 <li><a href="./about.html" class="navbutton">About</a></li>
-                <li><a href="./page-1/page-1.html" class="navbutton">Arthropoda</a></li>
-                <li><a href="https://linkedin.com/in/cody-slade-lowther-50362a184" target="_blank" class="navbutton">Contact</a></li>
-                <li><a href="https://knowyourmeme.com/memes/because-youre-worth-it" target="_blank" class="navbutton">Why Am I Here!?</a></li>
+                <li><a href="./articles.html" class="navbutton">Articles</a></li>
+                <li><a href="./business.html" target="_blank" class="navbutton">Business</a></li>
+                <li><a href="./contact" target="_blank" class="navbutton">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main id="body-main">
-        <div id="body-main-div">
-        <section>
-            <a name="home"></a>
-            <h2>About</h2>
-            <p>
-                
-            </p>
-        </section>
-        <hr>
-        <section>
-            <a name="about"></a>
-            <h2>Education</h2>
-            <ul class="list-ul">
-                <li>University of Dundee</li>
-                <li>University of York</li>
-            </ul>
-        </section>
-        <hr>
-        <section>
-            <a name="main-content"></a>
-            <h2>The Big Yin!</h2>
-            <p>
-                This is where the real content goes. If I had any...
-            </p>
-            <blockquote>
-                Oh, to be a creature of thought and wit,<br>
-                This vacuous spirit
-            </blockquote>
-        </section>
-        <section>
-            <a name=""></a>
-            <h3 class="main-content-headers"><a href="/page-1/page-1.html">My Favourite Arthropoda</a></h3>
-        </section>
-        <a href="#top-of-page">Page Top</a>
+    <main>
+        <div>
+            <section>
+                <h1>About Me (Work in Progress)</h1>
+                <p>
+                    Hello there! My name is Cody, I'm a graduate holding degrees in Physics (MPhys,2014) and Medical Imaging (MSc,2023), and a former research student in Plasma Physics.
+                </p>
+                <p>
+                    After struggling with depression, I left the world of academia (read: I failed my PhD) and sought my fortunes as a self-employed A-level Maths and Physics tutor - to middling success. 
+                </p>
+                <p>
+                    Now I'm bored, unfulfilled, and trying to find my way in life, maybe even find myself a reasonable career.
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h1>Education</h1>
+                <ul style="font-size: 1.5em;list-style: none;">
+                    <li><b>University of York</b></li>
+                    <ul>
+                        <li>Physics, MPhys, First Class Honours</li>
+                        <li>Plasma Physics, PhD, Fail</li>
+                    </ul>
+                    <li><b>University of Dundee</b></li>
+                    <ul>
+                        <li>Medical Imaging, MSc, Distinction</li>
+                    </ul>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <article class="article">
+                    <h2><a class="main-content-headers" href="./articles.html">Articles</a></h2>
+                    <div>
+                        <img src="./assets/arthropoda-collage.png">
+                        <p>
+                            Have a second? Take a look at my articles (that I haven't written yet).
+                        </p>
+                    </div>
+                </article>
+                <article class="article">
+                    <h2><a class="main-content-headers" href="./business.html">Tutoring</a></h2>
+                    <div>
+                        <img src="./assets/tutoring-logo.png">
+                        <p>
+                            Want to get ahead in your studies of Maths, Physics, or both? Fallen behind and need a pick-me-up? Just want an extra guarantee? Look no further!
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <a href="#top-of-page">Page Top</a>
         </div>
-        <form id="form" action="" method="POST">
-            <h2>Sign up to make your own page, with blackjack and CENSORED! </h2>
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-            <label for="bio">Comment & Behold!</label><br>
-            <textarea id="bio" name="bio" rows="5" cols="20"></textarea><br><br>
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to newsletter</label><br><br>
-            <input type="submit" value="Submit">
-        </form>
+        <aside>
+            <section>
+                <a href="https://linkedin.com/in/cody-slade-lowther-50362a184" target="_blank">LinkedIn</a>
+                <br>
+                <a href="" target="_blank">YouTube (Coming Soon)</a>
+                <br>
+                <a href="" target="_blank">Twitter (Maybe)</a>
+            </section>
+            <form id="form" action="" method="POST">
+                <h2>Sign up! </h2>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <label for="bio">Comment:</label><br>
+                <textarea id="bio" name="bio" rows="5" cols="20"></textarea><br><br>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe" style="overflow-wrap: break-word;">Subscribe to newsletter</label><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </aside>
     </main>
-    <footer id="body-footer">
-        <div id="body-footer-div">
-            <h2 id="footer-logo">Bugs!</h2>
+    <footer>
+        <div>
+            <h1 class="logo"><a href="https://codyslade.github.io" class="navbutton"><img src="./assets/logo-icon.png">Slade</a></h1>
             <div>
                 <ul id="nav-ul">
-                    <li><a href="#welcome" class="navbutton" target="_blank">Mi Maison</a></li>
-                    <li><a href="#about" class="navbutton" target="_blank">Sobre</a></li>
-                    <li><a href="#main-content" class="navbutton" target="_blank">Bu&#776yu&#776k Olan</a></li>
-                    <li><a href="https://uk.linkedin.com/in/cody-slade-lowther-50362a184" class="navbutton" target="_blank">Talk To Me!</a></li>
+                    <li><a href="./about.html" class="navbutton" target="_blank">About</a></li>
+                    <li><a href="./contact.html" class="navbutton" target="_blank">Contact</a></li>
+                    <li><a href="" class="navbutton" target="_blank">Terms & conditions</a></li>
+                    <li><a href="" class="navbutton" target="_blank">Privacy</a></li>
                 </ul>
             </div>
-            <a href="#top-of-page">Page Top</a>
         </div>
         <div id="disclaimer">
             <h2>Disclaimer</h2>
             <p>
-                If you've made it this far, Kudos! This page is entirely the ramblings of a mentally-defective brain-dribbling-out-his-ears moron, not to be taken seriously, and which in no way represents the views, opinions, or beliefs of BrightNetwork.
-            </p>
-            <p>
-                That said, address any complaints or legal matters elsewhere! *runs away* 
+                If you've made it this far, Kudos! This page is entirely the ramblings of an idiot, not to be taken seriously, and which in no way represents the views, opinions, or beliefs of BrightNetwork.
             </p>
         </div>
     </footer>
